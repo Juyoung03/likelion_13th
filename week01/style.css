@@ -1,0 +1,161 @@
+/* 간단한 초기화 */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-size: 16px;
+}
+
+/* id 선택자와 class 선택자 */
+#heading {
+  margin-top: 100px;
+  color: pink
+}
+
+.contents {
+  width: 400px;
+  height: 200px;
+  border: 1px solid gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* nav */
+nav {
+  height: 80px;
+  background-color: black;
+  
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+nav > ul {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+nav li {
+  margin: 10px 20px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  cursor: pointer;
+  
+}
+
+.info {
+  font-size: 10px;
+}
+
+h2 {
+  padding-top: 10px;
+}
+
+/* button & 가상 클래스 선택자 */
+button {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+
+  border-radius: 5px;
+  background-color: red;
+  opacity: 50%;
+
+  cursor: pointer;
+  
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+button:active {
+  color: #fff;
+}
+
+
+/* flex & em */
+#parent-box {
+  width: 1000px;
+  height: 100vh;
+  background-color: lightgray;
+  font-size: 10px;
+
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+#first-box {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+#second-box {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  color: white;
+  font-size: 10em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* relative */
+#third-box {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  font-weight: 900;
+  font-size: 60px;
+
+  position: relative;
+}
+
+/* absolute */
+#third-box div {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  
+}
+
+/* footer */
+footer {
+  height: 100px;
+  background-color: pink;
+
+}
+  
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
+  
