@@ -6,6 +6,7 @@ import { MyPage } from './pages/MyPage';
 import { NotFound } from './pages/NotFound';
 import { Layout } from './components/layouts/Layout';
 
+
 function App() {
   return (
     <BrowserRouter>
