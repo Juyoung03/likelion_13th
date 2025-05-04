@@ -1,3 +1,11 @@
+import { useParams } from "react-router-dom";
+
 export const Profile = () => {
-    return <main>Profile 페이지</main>;
-  };
+  const {name} = useParams();
+
+  return (
+    <main>
+      {name}의 프로필 페이지
+    </main>
+  );
+};
