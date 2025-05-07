@@ -4,11 +4,16 @@ export const SongCard = ({
     artist,
     title,
     lyricist,
-    composer
+    composer,
+    ClickOpen
 }) => {
-    console.log({artist});
+    
+
     return (
-        <section className="w-100 bg-gray-800 p-6 rounded-lg shadow m-5">
+        <section 
+            onClick={ClickOpen}
+            className="w-100 bg-gray-800 p-6 rounded-lg shadow m-5"
+        >
             <img 
                 src={albumImage} 
                 alt={`${title} 앨범 커버`} 
@@ -20,6 +25,7 @@ export const SongCard = ({
             <p className="text-gray-200">📝 작사가: {lyricist}</p>
             <p className="text-gray-200">🎼 작곡가: {composer}</p>
             <p className="text-gray-400 text-sm mt-2">📅 발매일: {releaseDate}</p>
+            
         </section>
     )
 }
