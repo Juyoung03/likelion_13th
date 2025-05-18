@@ -12,7 +12,7 @@ export const SongCard = ({
     return (
         <section 
             onClick={ClickOpen}
-            className="w-100 bg-gray-800 p-6 rounded-lg shadow m-5"
+            className="ph:w-60 ph:p-3 ph:m-3 ph:text-sm dt:w-100 dt:p-6 dt:m-5 dt:text-base bg-gray-800 rounded-lg shadow"
         >
             <img 
                 src={albumImage} 

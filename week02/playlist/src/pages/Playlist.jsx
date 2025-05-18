@@ -25,7 +25,8 @@ export const Playlist = () => {
   return (
     <div>
       <h1 className="pl-20 mt-10 font-extrabold text-3xl">My Playlist</h1>
-      <main className="pl-10 flex w-full m-auto">
+      <main className="dt:flex pl-10 w-full m-auto ph:grid-cols-1">
+    
       {albumData.songs.map((song, index) => {
         
         return(
